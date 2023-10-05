@@ -1,0 +1,17 @@
+<div class="card mb-5">
+    <div class="col">
+        <ng-template [ngIf]="product.image">
+            <div class="card-img-top">
+                <img src="{{product.image}}" alt="tea"
+                     onclick="this.requestFullscreen()">
+            </div>
+        </ng-template>
+        <div class="card-body">
+            <h5 class="card-title fw-bold">{{product.title}}</h5>
+            <p class="card-text">{{product.description | over100symbols}}</p>
+            <div class="card-price mb-4 fs-4">{{product.price}} руб.</div>
+            <a class="btn btn-primary" (click)="goToProduct(product.id)">Подробнее</a>
+        </div>
+    </div>
+</div>
+

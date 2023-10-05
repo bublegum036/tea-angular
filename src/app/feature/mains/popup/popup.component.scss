@@ -1,0 +1,12 @@
+.modal {
+  display: none;
+}
+
+.modal.modal-products {
+  display: flex;
+  align-items: center;
+}
+
+.modal.modal-products.close {
+  display: none;
+}

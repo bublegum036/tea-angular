@@ -1,0 +1,139 @@
+
+@font-face {
+  src: url("/assets/fonts/Arial.ttf");
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@font-face {
+  src: url("/assets/fonts/Arial-bold.ttf");
+  font-family: 'Arial';
+  font-weight: 700;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.section-slider {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+.slick-prev {
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #076BFF;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  z-index: 9999;
+}
+
+.slick-prev::before {
+  content: url("/assets/images/arrow/arrow-left.svg");
+  position: relative;
+  left: -2px;
+  top: 1px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background: #F8F9FA;
+}
+
+.slick-next {
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #076BFF;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 9999;
+}
+
+.slick-next::before {
+  content: url("/assets/images/arrow/arrow-right.svg");
+  position: relative;
+  left: 2px;
+  top: 1px;
+}
+
+#accordion {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+.ui-state-active, .ui-state-default {
+  background: linear-gradient(360deg, #076BFF 0%, #007BFF 100%);
+  border-radius: 10px;
+  border: 0;
+}
+
+.ui-widget-content {
+  border: 0;
+}
+
+.accordion-h3 {
+  color: #ffffff;
+}
+
+.accordion-div {
+  height: auto !important;
+}
+
+.accordion .ui-accordion-header {
+  position: relative;
+}
+.accordion-h3 .ui-accordion-header-icon  {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('/assets/images/arrow/arrrow-down.svg') 50% 50% no-repeat;
+  z-index: 99;
+}
+.accordion-h3 .ui-accordion-active {
+  background-image: url('/assets/images/arrow/arrrow-up.svg');
+}
+
+.hvr-radial-out {
+  background: #0d6efd;
+  outline: none;
+  border: 0;
+}
+
+.hvr-radial-out::before {
+  background: #68acff;
+}
+
+.hvr-shutter-in-vertical {
+  background: #0d6efd;
+  outline: none;
+  border: 0;
+}
+
+.hvr-shutter-in-vertical::before {
+  background: #0d6efd;
+  border-radius: 10px;
+}
+
+input.ng-invalid.ng-dirty,
+input.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+input.ng-invalid.ng-dirty + label,
+input.ng-invalid.ng-touched + label {
+  color: red;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
